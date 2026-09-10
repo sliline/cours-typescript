@@ -1,0 +1,11 @@
+"use strict";
+let prenom = "lina";
+let age = 22;
+let ville = "louviers";
+let estEtudiante = true;
+let année = 2026;
+console.log(prenom);
+console.log(age);
+console.log(ville);
+console.log(estEtudiante);
+console.log(année);
