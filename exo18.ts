@@ -6,14 +6,16 @@ interface Todo {
 
 type Filter = "all" | "done" | "todo";
 
-let todos: Todo[] = [];
+let todos: Todo[] = [];let nextId: number = 1;
+
 
 function add(text: string): void {
     todos.push({
-        id: todos.length + 1,
+        id: nextId,
         text: text,
         done: false
     });
+    nextId++;
 }
 
 function remove(id: number): void {

@@ -4,7 +4,7 @@ interface Person {
 }
 
 function sortPeople<T extends Person>(people: T[]): T[] {
-    return people.sort((a, b) => {
+    return [...people].sort((a, b) => {
         if (a.age !== b.age) {
             return a.age - b.age;
         }

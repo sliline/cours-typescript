@@ -1,5 +1,5 @@
 function wordCount(texte: string): Record<string, number> {
-    let mots = texte.split(" ");
+    let mots = texte.trim().split(/\s+/);
     let resultat: Record<string, number> = {};
 
     for (let i = 0; i < mots.length; i++) {
