@@ -40,4 +40,11 @@ console.assert(list("todo").length === 1, "il devrait rester 1 tâche à faire")
 
 remove(1);
 
-console.assert(list().length === 1, "il devrait rester 1 tâche");
+remove(1);
+
+add("Nouvelle tâche");
+
+console.assert(
+list()[0].id === 2 && list()[1].id === 3,
+"Les IDs doivent rester uniques après une suppression"
+);

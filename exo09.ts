@@ -26,3 +26,8 @@ console.assert(
     JSON.stringify({ chat: 2 }),
     "chat devrait apparaître 2 fois"
 );
+console.assert(
+JSON.stringify(wordCount("le chat")) ===
+JSON.stringify({ le: 1, chat: 1 }),
+"wordCount doit gérer les espaces multiples"
+);

@@ -58,3 +58,9 @@ console.assert(list().length === 1, "Il devrait rester 1 todo");
 // Test volontaire demandé par le tuteur :
 // décommente cette ligne pour voir l'erreur TypeScript
 //list("finished");
+add("Nouvelle tâche");
+
+console.assert(
+list()[0].id === 2 && list()[1].id === 3,
+"Les IDs doivent rester uniques après une suppression"
+);

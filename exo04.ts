@@ -17,3 +17,5 @@ for (let i = 1; i < tableau.length; i++) {
 return maximum;
 
 }
+console.assert(max([3, 9, 2]) === 9, "max devrait retourner 9");
+console.assert(max([]) === undefined, "max([]) doit retourner undefined");
