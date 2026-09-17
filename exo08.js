@@ -1,5 +1,5 @@
 function sum(tableau) {
-    return tableau.reduce((total, nombre) => total + nombre, 0);
+  return tableau.reduce((total, nombre) => total + nombre, 0);
 }
 
 console.assert(sum([1, 2, 3]) === 6, "1 + 2 + 3 devrait donner 6");

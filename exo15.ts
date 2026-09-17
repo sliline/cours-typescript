@@ -1,22 +1,22 @@
 function fibIterative(n: number): number {
-    let a = 0;
-    let b = 1;
+  let a = 0;
+  let b = 1;
 
-    for (let i = 0; i < n; i++) {
-        let suivant = a + b;
-        a = b;
-        b = suivant;
-    }
+  for (let i = 0; i < n; i++) {
+    const suivant = a + b;
+    a = b;
+    b = suivant;
+  }
 
-    return a;
+  return a;
 }
 
 function fibRecursive(n: number): number {
-    if (n <= 1) {
-        return n;
-    }
+  if (n <= 1) {
+    return n;
+  }
 
-    return fibRecursive(n - 1) + fibRecursive(n - 2);
+  return fibRecursive(n - 1) + fibRecursive(n - 2);
 }
 
 console.assert(fibIterative(0) === 0, "fib(0) devrait être 0");

@@ -1,9 +1,9 @@
 function toCelsius(f) {
-    return Math.round(((f - 32) * 5 / 9) * 10) / 10;
+  return Math.round((((f - 32) * 5) / 9) * 10) / 10;
 }
 
 function toFahrenheit(c) {
-    return Math.round(((c * 9 / 5) + 32) * 10) / 10;
+  return Math.round(((c * 9) / 5 + 32) * 10) / 10;
 }
 
 console.assert(toCelsius(32) === 0, "32°F devrait donner 0°C");
