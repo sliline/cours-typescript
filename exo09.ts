@@ -1,9 +1,9 @@
 function wordCount(texte: string): Record<string, number> {
-    let mots = texte.trim().split(/\s+/);
-    let resultat: Record<string, number> = {};
+   const mots = texte.trim().split(/\s+/);
+    const resultat: Record<string, number> = {};
 
     for (let i = 0; i < mots.length; i++) {
-        let mot = mots[i];
+        const mot = mots[i];
 
         if (resultat[mot]) {
             resultat[mot]++;

@@ -10,7 +10,7 @@ function groupBy<T extends User>(
     let resultat: Record<string, T[]> = {};
 
     for (let i = 0; i < users.length; i++) {
-        let valeur = String(users[i][propriete]);
+       const valeur = String(users[i][propriete]);
 
         if (!resultat[valeur]) {
             resultat[valeur] = [];

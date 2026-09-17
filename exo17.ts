@@ -22,10 +22,10 @@ function calculateCart(
         subtotal += products[i].price * products[i].quantity;
     }
 
-    let discountAmount = subtotal * discount / 100;
-    let totalHT = subtotal - discountAmount;
-    let tva = totalHT * 0.20;
-    let totalTTC = totalHT + tva;
+    const discountAmount = subtotal * discount / 100;
+const totalHT = subtotal - discountAmount;
+const tva = totalHT * 0.20;
+const totalTTC = totalHT + tva;
 
     return {
         subtotal: subtotal,

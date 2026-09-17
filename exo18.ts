@@ -6,7 +6,7 @@ interface Todo {
 
 type Filter = "all" | "done" | "todo";
 
-let todos: Todo[] = [];let nextId: number = 1;
+const todo = todos.find(todo => todo.id === id);
 
 
 function add(text: string): void {

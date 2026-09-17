@@ -1,6 +1,5 @@
 function evenDoubled(tableau: number[]): number[] {
-    let resultat: number[] = [];
-
+    const resultat: number[] = [];
     for (let i = 0; i < tableau.length; i++) {
         if (tableau[i] % 2 === 0) {
             resultat.push(tableau[i] * 2);

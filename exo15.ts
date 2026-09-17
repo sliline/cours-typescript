@@ -3,7 +3,7 @@ function fibIterative(n: number): number {
     let b = 1;
 
     for (let i = 0; i < n; i++) {
-        let suivant = a + b;
+        const suivant = a + b;
         a = b;
         b = suivant;
     }

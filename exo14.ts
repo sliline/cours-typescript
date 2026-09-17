@@ -1,7 +1,6 @@
 function isAnagram(mot1: string, mot2: string): boolean {
-    let a = mot1.toLowerCase().split("").sort().join("");
-    let b = mot2.toLowerCase().split("").sort().join("");
-
+    const a = mot1.toLowerCase().split("").sort().join("");
+const b = mot2.toLowerCase().split("").sort().join("");
     return a === b;
 }
 

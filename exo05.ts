@@ -1,7 +1,7 @@
 function countVowels(texte: string): number {
 
     let compteur = 0;
-    let voyelles = "aeiouy";
+    const voyelles = "aeiouy";
 
     for (let i = 0; i < texte.length; i++) {
 
