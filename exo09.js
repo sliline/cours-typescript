@@ -1,5 +1,5 @@
 function wordCount(texte) {
-    let mots = texte.split(" ");
+    const mots = texte.trim().split(/\s+/);
     let resultat = {};
 
     for (let i = 0; i < mots.length; i++) {
@@ -25,4 +25,13 @@ console.assert(
     JSON.stringify(wordCount("chat chat")) ===
     JSON.stringify({ chat: 2 }),
     "chat devrait apparaître 2 fois"
+);
+console.assert(
+
+JSON.stringify(wordCount("le chat")) ===
+
+JSON.stringify({ le: 1, chat: 1 }),
+
+"wordCount doit gérer les espaces multiples"
+
 );

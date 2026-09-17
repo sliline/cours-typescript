@@ -1,5 +1,5 @@
 function sortPeople(people) {
-    return people.sort((a, b) => {
+    return [...people].sort((a, b) => {
         if (a.age !== b.age) {
             return a.age - b.age;
         }

@@ -1,12 +1,7 @@
-let todos = [];
+let todos = []; let nextId = 1;
 
-function add(text) {
-    todos.push({
-        id: todos.length + 1,
-        text: text,
-        done: false
-    });
-}
+function add(text) { todos.push({ id: nextId, text: text, done: false }); nextId++; }
+
 
 function remove(id) {
     todos = todos.filter(todo => todo.id !== id);
