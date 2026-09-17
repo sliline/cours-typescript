@@ -1,18 +1,17 @@
 function max(tableau) {
-if (tableau.length === 0) {
-return undefined;
-}
+  if (tableau.length === 0) {
+    return undefined;
+  }
 
-let maximum = tableau[0];
+  let maximum = tableau[0];
 
-for (let i = 1; i < tableau.length; i++) {
+  for (let i = 1; i < tableau.length; i++) {
     if (tableau[i] > maximum) {
-        maximum = tableau[i];
+      maximum = tableau[i];
     }
-}
+  }
 
-return maximum;
-
+  return maximum;
 }
 console.assert(max([3, 9, 2]) === 9, "max devrait retourner 9");
 
